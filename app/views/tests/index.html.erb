@@ -1,0 +1,9 @@
+<h1> Create a new <%= link_to 'Test', new_test_path %></h1>
+
+<%= @tests.each do |test| %>
+<br />
+  <%= test.question %>
+  <br />
+  <br />
+  <%= test.answer %>
+<% end %>
